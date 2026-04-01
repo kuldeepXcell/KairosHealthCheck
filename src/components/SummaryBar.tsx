@@ -18,7 +18,7 @@ export function SummaryBar({ total, up, down, pollIntervalMs, clock }: Props) {
   return (
     <header className={styles.bar}>
       <div className={styles.left}>
-        <h1 className={styles.heading}>Kairos Living | Dev | Service Health</h1>
+        <h1 className={styles.heading}>Kairos Living | Stage | Service Health</h1>
         <p className={styles.sub}>
           Polling <code className={styles.code}>/health</code> every{" "}
           <strong>{pollIntervalMs} ms</strong>
