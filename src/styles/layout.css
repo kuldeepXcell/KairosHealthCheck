@@ -1,0 +1,21 @@
+.app-shell {
+  min-height: 100%;
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.app-main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: 1.1rem;
+}
+
+@media (min-width: 900px) {
+  .service-grid {
+    gap: 1.25rem;
+  }
+}

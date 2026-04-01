@@ -1,0 +1,38 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.panel {
+  max-width: 52ch;
+  padding: 1.75rem 1.5rem;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--surface-2) 70%, transparent);
+  box-shadow: 0 20px 50px color-mix(in oklab, #000 30%, transparent);
+}
+
+.title {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.text {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.code {
+  font-family: var(--font-mono);
+  font-size: 0.82em;
+  padding: 0.1rem 0.3rem;
+  border-radius: 6px;
+  background: color-mix(in oklab, var(--surface) 85%, transparent);
+  border: 1px solid var(--border);
+  color: var(--text-soft);
+}

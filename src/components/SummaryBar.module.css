@@ -1,0 +1,106 @@
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.25rem 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.75rem;
+}
+
+.left {
+  min-width: 0;
+}
+
+.heading {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
+.sub {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  max-width: 42ch;
+  line-height: 1.5;
+}
+
+.code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  padding: 0.12rem 0.35rem;
+  border-radius: 6px;
+  background: color-mix(in oklab, var(--surface-2) 80%, transparent);
+  border: 1px solid var(--border);
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 0.65rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.55rem 0.85rem;
+  min-width: 4.5rem;
+  border-radius: 12px;
+  background: color-mix(in oklab, var(--surface-2) 75%, transparent);
+  border: 1px solid var(--border);
+}
+
+.statOk {
+  border-color: color-mix(in oklab, var(--ok) 35%, var(--border));
+}
+
+.statBad {
+  border-color: color-mix(in oklab, var(--bad) 35%, var(--border));
+}
+
+.statLabel {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.statValue {
+  font-family: var(--font-mono);
+  font-size: 1.35rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.15rem;
+  padding: 0.55rem 0.85rem;
+  border-radius: 12px;
+  border: 1px dashed color-mix(in oklab, var(--muted) 40%, var(--border));
+}
+
+.clockLabel {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.clockValue {
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-soft);
+}

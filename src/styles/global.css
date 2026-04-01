@@ -1,0 +1,55 @@
+:root {
+  color-scheme: dark;
+  --bg: #070a10;
+  --bg-glow: radial-gradient(
+    1200px 600px at 10% -10%,
+    color-mix(in oklab, #3b5bdb 22%, transparent),
+    transparent 55%
+  );
+  --surface: #0f1419;
+  --surface-2: #151c24;
+  --border: color-mix(in oklab, #fff 10%, transparent);
+  --text: #f2f4f8;
+  --text-soft: #c9d1dc;
+  --muted: #8b98a8;
+  --ok: #3dd68c;
+  --bad: #f2556a;
+  --bad-bright: #ff8a98;
+  --warn: #f5c15c;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--bg);
+  background-image: var(--bg-glow);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100%;
+}
+
+a {
+  color: color-mix(in oklab, var(--ok) 75%, white);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid color-mix(in oklab, var(--ok) 60%, transparent);
+  outline-offset: 2px;
+}
